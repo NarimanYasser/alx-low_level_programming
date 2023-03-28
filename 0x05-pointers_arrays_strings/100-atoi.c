@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * is_numerical - check if it is a digit
  * @n: Number
@@ -23,22 +24,25 @@ int _atoi(char *s)
 	number = 0;
 
 
-
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		if (is_numerical(s[i]))
 		{
 			number = (s[i] - 48) + number * 10;
+
 			if (s[i + 1] == ' ')
-				break;
+		break;
 		}
-		else if (s[i] == '-')
-		{
-			sign *= -1;
-		}
+	else if (s[i] == '-')
+	{
+		sign *= -1;
+	}
 
 	}
 
-	return (number'*'sign);
+	return (number '*'sign);
+
+}
+
 
 }
