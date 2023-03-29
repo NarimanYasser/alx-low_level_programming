@@ -2,19 +2,17 @@ nclude "main.h"
 
 /**
  * _strlen -length of a string
- * @s: A pointer to an int that will be changed/updated
  *
- * Return: void that means our answer iscorrect
+ * @s: this is the input string
+ *
+ * Return: Lenngth of the string
  */
 
 int _strlen(char *s)
 {
-	int u;
+	int index;
 
-	u = 0;
-	while (s[u] != '\0')
-	{
-		u++;
-	}
-	return (u);
+	for (index = 0; s[index] != '\0' ; index++)
+		;
+	return (index);
 }
