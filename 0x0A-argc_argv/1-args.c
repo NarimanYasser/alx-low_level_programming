@@ -7,13 +7,8 @@
  * Return: it returns 0 if the program compiles ok
  */
 
-int main(int argc, char *argv[])
+int main(int argc, __attribute__((unused)) char *argv[])
 {
-	int count;
-
-	for (count = 0; count < argc; count++)
-	{
-		printf("%s\n", argv[count]);
-	}
+	printf("%d\n", argc - 1);
 	return (0);
 }
