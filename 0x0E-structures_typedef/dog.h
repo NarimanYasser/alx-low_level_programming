@@ -2,14 +2,13 @@
 #define DOG_H
 
 /**
- * struct dog - this descripction of a new type struct dog.
+ * struct dog - this the struct dog.
  * @name: The name of a dog.
  * @age: The age of a dog.
  * @owner: The owner of a dog.
  *
- * Descripction: Define a new type struct dog.
+ * Descripction: Define a new type of the struct dog.
  */
-
 struct dog
 {
 	char *name;
@@ -17,7 +16,7 @@ struct dog
 	char *owner;
 };
 
-typedef srruct dog dog_t;
+typedef struct dog dog_t;
 
 void init_dog(struct dog *d, char *name, float age, char *owner);
 oid print_dog(struct dog *d);
