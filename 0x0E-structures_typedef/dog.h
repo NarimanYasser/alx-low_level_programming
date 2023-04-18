@@ -17,6 +17,8 @@ struct dog
 	char *owner;
 };
 
+typedef srruct dog dog_t
+
 void init_dog(struct dog *d, char *name, float age, char *owner);
 oid print_dog(struct dog *d);
 
