@@ -1,6 +1,4 @@
 #include "variadic_functions.h"
-#include <stdarg.h>
-#include <stdio.h>
 
 /**
  * print_numbers - the prints numbers of the functions.
@@ -12,14 +10,16 @@
 
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-	int i = n;
 	va_list ap;
+	unsigned int a;
 
 	va_start(ap, n);
-	for (i = 0; i < n; i++)
+	for (a = 0; a < n; a++)
+	{
 		printf("%d", va_arg(ap, int));
-		if (separator && i < n - 1)
+		if (separator != NULL && a != (n - 1))
 			printf("%s", separator);
+	}
 	printf("\n");
 	va_end(ap);
 }
