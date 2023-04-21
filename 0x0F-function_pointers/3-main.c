@@ -12,7 +12,7 @@
 
 int main(int argc, char **argv)
 {
-	int m, i;
+	int a, b;
 	int (*op_func)(int, int);
 
 	if (argc != 4)
@@ -35,9 +35,9 @@ int main(int argc, char **argv)
 		exit(99);
 	}
 
-	m = atoi(argv[1]);
-	i = atoi(argv[3]);
+	a = atoi(argv[1]);
+	b = atoi(argv[3]);
 
-	printf("%d\n", op_func(m, i));
+	printf("%d\n", op_func(a, b));
 	return (0);
 }
