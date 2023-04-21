@@ -12,7 +12,8 @@
 
 int main(int argc, char **argv)
 {
-	int (*op_func)(int, int), a, b;
+	int m, i;
+	int (*op_func)(int, int);
 
 	if (argc != 4)
 	{
@@ -30,13 +31,13 @@ int main(int argc, char **argv)
 
 	if (op_func == NULL)
 	{
-	       printf("Error\n");
+		printf("Error\n");
 		exit(99);
 	}
 
-	a = atoi(argv[1]);
-	b = atoi(argv[3]);
+	m = atoi(argv[1]);
+	i = atoi(argv[3]);
 
-	printf("%d\n", op_func(a, b));
+	printf("%d\n", op_func(m, i));
 	return (0);
 }
