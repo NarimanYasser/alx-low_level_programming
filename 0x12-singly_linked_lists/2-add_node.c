@@ -4,6 +4,23 @@
 #include "lists.h"
 
 /**
+ * strlen - the return of the length of a string.
+ * @str: the string of the length to check.
+ * Return: the length of a string.
+ */
+
+int strlen(char *str)
+{
+	int a = 0;
+
+	if (!str)
+		return (0);
+	while (*str++)
+		a++;
+	return (a);
+}
+			
+/**
  *  add_node - The beginning of a list_t list.
  *
  *  @head: pointer of linked list.
