@@ -1,7 +1,23 @@
 #include "lists.h"
+/**
+ *_strlen - the return of the length of a string.
+ * @str: the string of the length to check.
+ * Return: the length of a string.
+ */
+
+int _strlen(char *str)
+{
+	int nodes = 0;
+
+	if (!str)
+		return (0);
+	while (*str++)
+		nodes++;
+	return (nodes);
+}
 
 /**
- *  print_list - The elements of list_t list.
+ * print_list - The elements of list_t list.
  *
  *  @h: pointer to the head nodes.
  *
