@@ -9,12 +9,11 @@
 
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
-	listint_t *new_node;
 	unsigned int a;
 
 	for (a = 0; a < index && head != NULL; a++)
 	{
-		new_node = new_node->next;
+		head = head->next;
 	}
-	return (new_node);
+	return (head);
 }
